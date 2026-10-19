@@ -1,4 +1,4 @@
-import React, { useId } from 'react';
+import React, { useEffect, useId } from 'react';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Menu, MenuTrigger, MenuContent } from '../Menu';
 import { GlobeIcon } from './icons';
@@ -11,6 +11,12 @@ import messages from '../Header.messages';
  */
 const LanguageMenu = () => {
   const intl = useIntl();
+
+  // The language list is unmounted until the menu opens, so this face would
+  // otherwise start downloading on the first click.
+  useEffect(() => {
+    document.fonts?.load('500 1em "Noto Serif Tibetan"', 'བོད་ཡིག');
+  }, []);
   const triggerId = useId();
   const label = intl.formatMessage(messages['header.label.language.menu']);
   return /*#__PURE__*/React.createElement(Menu, {
