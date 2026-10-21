@@ -2,8 +2,8 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   dashboard: {
     id: 'header.menu.dashboard.label',
-    defaultMessage: 'Dashboard',
-    description: 'The text for the user menu Dashboard navigation link.'
+    defaultMessage: 'My Courses',
+    description: 'The text for the user menu My Courses navigation link.'
   },
   help: {
     id: 'header.help.label',
@@ -42,4 +42,5 @@ const messages = defineMessages({
   }
 });
 export default messages;
+
 //# sourceMappingURL=messages.js.map
