@@ -74,7 +74,7 @@ describe('Header', () => {
 
     expect(screen.getByText('Mock Name')).toBeInTheDocument();
     expect(screen.getByText('mock@example.com')).toBeInTheDocument();
-    expect(screen.getByText('Dashboard')).toBeInTheDocument();
+    expect(screen.getByText('My Courses')).toBeInTheDocument();
 
     const signOut = screen.getByText('Sign Out').closest('a');
     expect(signOut).toHaveClass('nav-menu-signout');
