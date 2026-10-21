@@ -2,7 +2,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'header.links.courses': {
     id: 'header.links.courses',
-    defaultMessage: 'Dashboard',
+    defaultMessage: 'My Courses',
     description: 'Link to the learner course dashboard'
   },
   'header.links.programs': {
@@ -12,7 +12,7 @@ const messages = defineMessages({
   },
   'header.links.content.search': {
     id: 'header.links.content.search',
-    defaultMessage: 'Discover New',
+    defaultMessage: 'Explore Courses',
     description: 'Link to the content search page'
   },
   'header.links.schools': {
@@ -22,7 +22,7 @@ const messages = defineMessages({
   },
   'header.user.menu.dashboard': {
     id: 'header.user.menu.dashboard',
-    defaultMessage: 'Dashboard',
+    defaultMessage: 'My Courses',
     description: 'Link to the user dashboard'
   },
   'header.user.menu.profile': {
@@ -122,4 +122,5 @@ const messages = defineMessages({
   }
 });
 export default messages;
+
 //# sourceMappingURL=Header.messages.js.map
